@@ -33,3 +33,15 @@ Directly comparing raw gene values across cells can be misleading.
 To make cells comparable, this pipeline applied:
 1) Library-size normalization: each cell is scaled to the same total count (10,000).
 2) log1p transformation: reduces the impact of extreme values and stabilizes the distribution.
+
+## Step 4. Visualization & Interpretation
+
+Visualization is used not for presentation. It is for validation.
+
+By comparing distributions before and after QC and normalization,
+we can visually confirm:
+- Low-quality cells are removed during QC.
+- Normalization reduces variability caused by technical differences,
+  making cells more comparable.
+
+This step helps ensure that downstream analysis is based on reliable data.
