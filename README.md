@@ -14,5 +14,13 @@ Before performing any analysis, the first step is to understand the structure of
 - Are there obvious anomalies?
 
 This mirrors the first task given to research intern: to familiarize themselves with the dataset before applying any methods.
+I take a quick look at the dataset (`/data/expression_like_data.csv`) using the `describe()` function from pandas to understand its basic structure and summary statistics.
 
-First, I take a quick look at the dataset (`/data/expression_like_data.csv`) using the `describe()` function from pandas to understand its basic structure and summary statistics.
+## Step 2. Quality Control (QC)
+
+Not all cells in a single-cell dataset are suitable for analysis.
+Some cells may have extremely low total expression, which often indicates
+technical failure or poor-quality measurements.
+
+In this pipeline, cells with a total expression below a defined threshold are excluded.
+The exact threshold is not a fixed rule, but a decision based on data characteristics and analysis goals.
