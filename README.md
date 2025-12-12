@@ -6,3 +6,13 @@ is introduced to single-cell data analysis in a real R&D team.
 The goal is not to perform advanced bioinformatics analysis,
 but to understand the learning structure:
 how data is explored, cleaned, evaluated, and interpreted step by step.
+
+## Step 1. Data Loading & Initial Exploration
+Before performing any analysis, the first step is to understand the structure of data.
+- How many cells are present?
+- How many features(genes) exist?
+- Are there obvious anomalies?
+
+This mirrors the first task given to research intern: to familiarize themselves with the dataset before applying any methods.
+
+First, I take a quick look at the dataset (`/data/expression_like_data.csv`) using the `describe()` function from pandas to understand its basic structure and summary statistics.
