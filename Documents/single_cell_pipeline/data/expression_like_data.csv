@@ -1,0 +1,6 @@
+﻿cell_id,gene_ACTB,gene_GAPDH,gene_POU5F1,gene_TUBB3,gene_KI67
+cell_001,120,300,0,0,5
+cell_002,90,250,0,0,0
+cell_003,500,800,40,0,120
+cell_004,60,200,0,90,0
+cell_005,10,30,0,0,0
