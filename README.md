@@ -38,10 +38,15 @@ To make cells comparable, this pipeline applied:
 
 Visualization is used not for presentation. It is for validation.
 
+<img width="640" height="480" alt="visualization_b_raw" src="./outputs/visualization_a.png"/>
+
 By comparing distributions before and after QC and normalization,
 we can visually confirm:
+
 - Low-quality cells are removed during QC.
-- Normalization reduces variability caused by technical differences,
-  making cells more comparable.
+<img width="640" height="480" alt="visualization_a" src="./outputs/visualization_b_raw.png" />
+
+- Normalization reduces variability caused by technical differences, making cells more comparable.
+<img width="640" height="480" alt="visualization_b_raw" src="./outputs/visualization_b_normalized.png"/>
 
 This step helps ensure that downstream analysis is based on reliable data.
