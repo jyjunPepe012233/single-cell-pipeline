@@ -24,3 +24,12 @@ technical failure or poor-quality measurements.
 
 In this pipeline, cells with a total expression below a defined threshold are excluded.
 The exact threshold is not a fixed rule, but a decision based on data characteristics and analysis goals.
+
+## Step 3. Normalization
+
+Cells can have very different total expression counts due to technical factors(e.g., sequencing depth).
+Directly comparing raw gene values across cells can be misleading.
+
+To make cells comparable, this pipeline applied:
+1) Library-size normalization: each cell is scaled to the same total count (10,000).
+2) log1p transformation: reduces the impact of extreme values and stabilizes the distribution.
